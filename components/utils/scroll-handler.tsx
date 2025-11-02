@@ -1,11 +1,8 @@
 "use client";
 
 import { useEffect } from "react";
-import { useSearchParams } from "next/navigation";
 
-export function ScrollHandler() {
-  const searchParams = useSearchParams();
-
+function ScrollHandlerInner() {
   useEffect(() => {
     // Función para hacer scroll a una sección
     const scrollToSection = (sectionId: string) => {
@@ -23,8 +20,26 @@ export function ScrollHandler() {
     if (hash) {
       scrollToSection(hash);
     }
-  }, [searchParams]);
+
+    // También escuchar cambios en la URL
+    const handleHashChange = () => {
+      const newHash = window.location.hash.replace('#', '');
+      if (newHash) {
+        scrollToSection(newHash);
+      }
+    };
+
+    window.addEventListener('hashchange', handleHashChange);
+
+    return () => {
+      window.removeEventListener('hashchange', handleHashChange);
+    };
+  }, []);
 
   return null; // Este componente no renderiza nada
+}
+
+export function ScrollHandler() {
+  return <ScrollHandlerInner />;
 }
 

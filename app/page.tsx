@@ -6,11 +6,14 @@ import { MethodSection } from "@/components/sections/method-section";
 import { CTASection } from "@/components/sections/cta-section";
 import { FAQSection } from "@/components/sections/faq-section";
 import { ScrollHandler } from "@/components/utils/scroll-handler";
+import { Suspense } from "react";
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-white font-inter">
-      <ScrollHandler />
+      <Suspense fallback={null}>
+        <ScrollHandler />
+      </Suspense>
       <Navbar />
       <main>
         <HeroSection />
