@@ -73,7 +73,7 @@ export function Navbar() {
           <div className="hidden md:block">
             <Link href="/consultoria">
               <Button
-                className="bg-burgundy-dark hover:bg-burgundy text-white font-inter font-semibold px-6 py-3 rounded-full transition-smooth group cursor-pointer"
+                className="bg-burgundy-dark hover:bg-burgundy hover:scale-105 text-white font-inter font-semibold px-6 py-3 rounded-full transition-smooth group cursor-pointer"
               >
                 Consultoría Gratuita
                 <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />

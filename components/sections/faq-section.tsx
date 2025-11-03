@@ -100,7 +100,7 @@ export function FAQSection() {
                   value={faq.id}
                   className="px-6 md:px-8"
                 >
-                  <AccordionTrigger className="text-left font-inter font-semibold text-base md:text-lg xl:text-xl text-black py-6 hover:no-underline cursor-pointer">
+                  <AccordionTrigger className="text-left font-inter font-semibold text-base md:text-lg xl:text-xl text-black py-6 hover:no-underline hover:scale-105 cursor-pointer">
                     {faq.question}
                   </AccordionTrigger>
                   <AccordionContent className="text-gray-600 font-inter leading-relaxed text-sm md:text-lg xl:text-xl pb-6 pt-0 cursor-pointer">

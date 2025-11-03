@@ -91,7 +91,7 @@ export function HeroSection() {
                 <Link href="/consultoria">
                   <Button
                     size="lg"
-                    className="bg-white text-[#6B0F2A] hover:bg-gray-50 font-inter font-semibold pl-4 sm:pl-6 pr-2 sm:pr-4 py-3 sm:py-6 text-sm sm:text-base md:text-lg rounded-full transition-smooth group shadow-lg flex items-center gap-3 sm:gap-4 cursor-pointer"
+                    className="bg-white text-[#6B0F2A] hover:bg-gray-50 hover:scale-105 font-inter font-semibold pl-4 sm:pl-6 pr-2 sm:pr-4 py-3 sm:py-6 text-sm sm:text-base md:text-lg rounded-full transition-smooth group shadow-lg flex items-center gap-3 sm:gap-4 cursor-pointer"
                   >
                     <span className="whitespace-nowrap">Consultoría Gratuita</span>
                     <div className="bg-[#8B1538] rounded-full p-1.5 sm:p-2 group-hover:bg-[#6B0F2A] transition-colors">
@@ -103,7 +103,7 @@ export function HeroSection() {
                 <Button
                   onClick={() => scrollToSection("metodo")}
                   size="lg"
-                  className="bg-transparent border-2 border-white text-white hover:bg-white/10 font-inter font-semibold px-4 sm:px-6 py-3 sm:py-6 text-sm sm:text-base md:text-lg rounded-full transition-smooth flex-shrink-0 cursor-pointer"
+                  className="bg-transparent border-2 border-white text-white hover:bg-white/10 hover:scale-105 font-inter font-semibold px-4 sm:px-6 py-3 sm:py-6 text-sm sm:text-base md:text-lg rounded-full transition-smooth flex-shrink-0 cursor-pointer"
                 >
                   Método
                 </Button>

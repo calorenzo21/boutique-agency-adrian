@@ -15,15 +15,7 @@ export function FooterLight() {
   const menuLinks = [
     { label: "Filosofía", href: "hero" },
     { label: "Servicio", href: "servicios" },
-    { label: "Industrias", href: "servicios" },
     { label: "Método", href: "metodo" },
-    { label: "Contacto", href: "contacto" },
-  ];
-
-  const legalLinks = [
-    { label: "Política de Privacidad", href: "#" },
-    { label: "Política de Cookies", href: "#" },
-    { label: "Aviso Legal", href: "#" },
   ];
 
   const socialLinks = [
@@ -35,7 +27,7 @@ export function FooterLight() {
   return (
     <footer className="bg-gray-50 text-gray-800 border-t border-gray-200">
       <div className="container mx-auto px-4 lg:px-8 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12">
           {/* Column 1 - Branding */}
           <motion.div
             className="space-y-4"
@@ -80,7 +72,7 @@ export function FooterLight() {
                 <li key={link.label}>
                   <Link
                     href="/"
-                    className="text-gray-600 hover:text-[#6B0F2A] transition-smooth font-inter"
+                    className="text-gray-600 hover:text-[#6B0F2A] hover:scale-105 transition-smooth font-inter cursor-pointer"
                   >
                     {link.label}
                   </Link>
@@ -89,32 +81,7 @@ export function FooterLight() {
             </ul>
           </motion.div>
 
-          {/* Column 3 - Legal */}
-          <motion.div
-            className="space-y-4"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            viewport={{ once: true }}
-          >
-            <h4 className="text-lg font-inter font-semibold uppercase tracking-wider text-[#6B0F2A]">
-              LEGAL
-            </h4>
-            <ul className="space-y-3">
-              {legalLinks.map((link) => (
-                <li key={link.label}>
-                  <a
-                    href={link.href}
-                    className="text-gray-600 hover:text-[#6B0F2A] transition-smooth font-inter"
-                  >
-                    {link.label}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </motion.div>
-
-          {/* Column 4 - Contact */}
+          {/* Column 3 - Contact */}
           <motion.div
             className="space-y-4"
             initial={{ opacity: 0, y: 20 }}

@@ -15,15 +15,7 @@ export function Footer() {
   const menuLinks = [
     { label: "Filosofía", href: "hero" },
     { label: "Servicio", href: "servicios" },
-    { label: "Industrias", href: "servicios" },
     { label: "Método", href: "metodo" },
-    { label: "Contacto", href: "contacto" },
-  ];
-
-  const legalLinks = [
-    { label: "Política de Privacidad", href: "#" },
-    { label: "Política de Cookies", href: "#" },
-    { label: "Aviso Legal", href: "#" },
   ];
 
   const socialLinks = [
@@ -35,7 +27,7 @@ export function Footer() {
   return (
     <footer id="contacto" className="bg-burgundy-dark text-white">
       <div className="container mx-auto px-4 lg:px-8 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12">
           {/* Column 1 - Branding */}
           <motion.div
             className="space-y-4"
@@ -53,7 +45,7 @@ export function Footer() {
                 <motion.a
                   key={social.label}
                   href={social.href}
-                  className="w-10 h-10 bg-burgundy hover:bg-white hover:text-burgundy rounded-full flex items-center justify-center transition-smooth"
+                  className="w-10 h-10 bg-burgundy hover:bg-white rounded-full flex items-center justify-center transition-smooth"
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.95 }}
                   aria-label={social.label}
@@ -80,7 +72,7 @@ export function Footer() {
                 <li key={link.label}>
                   <button
                     onClick={() => scrollToSection(link.href)}
-                    className="text-gray-300 hover:text-white transition-smooth font-inter"
+                    className="text-gray-300 hover:text-white hover:scale-105 transition-smooth font-inter cursor-pointer"
                   >
                     {link.label}
                   </button>
@@ -89,32 +81,7 @@ export function Footer() {
             </ul>
           </motion.div>
 
-          {/* Column 3 - Legal */}
-          <motion.div
-            className="space-y-4"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            viewport={{ once: true }}
-          >
-            <h4 className="text-lg font-inter font-semibold uppercase tracking-wider">
-              LEGAL
-            </h4>
-            <ul className="space-y-3">
-              {legalLinks.map((link) => (
-                <li key={link.label}>
-                  <a
-                    href={link.href}
-                    className="text-gray-300 hover:text-white transition-smooth font-inter"
-                  >
-                    {link.label}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </motion.div>
-
-          {/* Column 4 - Contact */}
+          {/* Column 3 - Contact */}
           <motion.div
             className="space-y-4"
             initial={{ opacity: 0, y: 20 }}

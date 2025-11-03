@@ -60,7 +60,7 @@ export function CTASection() {
             <Link href="/consultoria">
               <Button
                 size="lg"
-                className="bg-white text-[#6B0F2A] hover:bg-gray-50 font-inter font-semibold pl-8 pr-4 py-6 text-base md:text-xl rounded-full transition-smooth group shadow-lg gap-4 cursor-pointer"
+                className="bg-white text-[#6B0F2A] hover:bg-gray-50 hover:scale-105 font-inter font-semibold pl-8 pr-4 py-6 text-base md:text-xl rounded-full transition-smooth group shadow-lg gap-4 cursor-pointer"
               >
                 <span>Consultoría Gratuita</span>
                 <div className="bg-[#8B1538] rounded-full p-2 group-hover:bg-[#6B0F2A] transition-colors">
