@@ -36,7 +36,7 @@ export function Footer() {
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            <h3 className="text-3xl font-hedvig font-bold">Markethy</h3>
+            <h3 className="text-3xl font-hedvig font-bold">Dome Media</h3>
             <p className="text-gray-300 font-inter leading-relaxed">
               Hacemos que tus experiencias hablen solo con clientes reales
             </p>
@@ -94,12 +94,12 @@ export function Footer() {
             </h4>
             <div className="space-y-4">
               <motion.a
-                href="mailto:angel@markethy.com"
+                href="mailto:angel@domemedia.com"
                 className="flex items-center text-gray-300 hover:text-white transition-smooth font-inter group"
                 whileHover={{ x: 5 }}
               >
                 <Mail className="h-4 w-4 mr-3" />
-                angel@markethy.com
+                angel@domemedia.com
                 <ArrowRight className="ml-2 h-4 w-4 opacity-0 group-hover:opacity-100 transition-smooth" />
               </motion.a>
 
@@ -135,7 +135,7 @@ export function Footer() {
           viewport={{ once: true }}
         >
           <p className="text-gray-400 font-inter">
-            © 2025 Markethy. Todos los derechos reservados.
+            © 2025 Dome Media. Todos los derechos reservados.
           </p>
         </motion.div>
       </div>

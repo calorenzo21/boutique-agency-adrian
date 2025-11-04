@@ -15,7 +15,7 @@ const hedvigLettersSerif = {
 };
 
 export const metadata: Metadata = {
-  title: "Markethy - Agencia especializada en tu crecimiento",
+  title: "Dome Media - Agencia especializada en tu crecimiento",
   description: "Ayudamos a incrementar la facturación de clínicas estéticas y cirujanos plásticos mediante la adquisición de clientes cualificados con estrategias de tráfico altamente precisas.",
 };
 

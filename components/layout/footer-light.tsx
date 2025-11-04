@@ -36,7 +36,7 @@ export function FooterLight() {
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            <h3 className="text-3xl font-hedvig font-bold text-[#6B0F2A]">Markethy</h3>
+            <h3 className="text-3xl font-hedvig font-bold text-[#6B0F2A]">Dome Media</h3>
             <p className="text-gray-600 font-inter leading-relaxed">
               Hacemos que tus experiencias hablen solo con clientes reales
             </p>
@@ -94,12 +94,12 @@ export function FooterLight() {
             </h4>
             <div className="space-y-4">
               <motion.a
-                href="mailto:angel@markethy.com"
+                href="mailto:angel@domemedia.com"
                 className="flex items-center text-gray-600 hover:text-[#6B0F2A] transition-smooth font-inter group"
                 whileHover={{ x: 5 }}
               >
                 <Mail className="h-4 w-4 mr-3" />
-                angel@markethy.com
+                angel@domemedia.com
                 <ArrowRight className="ml-2 h-4 w-4 opacity-0 group-hover:opacity-100 transition-smooth" />
               </motion.a>
 
@@ -135,7 +135,7 @@ export function FooterLight() {
           viewport={{ once: true }}
         >
           <p className="text-gray-500 font-inter">
-            © 2025 Markethy. Todos los derechos reservados.
+            © 2025 Dome Media. Todos los derechos reservados.
           </p>
         </motion.div>
       </div>
