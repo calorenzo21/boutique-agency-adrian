@@ -104,14 +104,14 @@ export function Footer() {
               </motion.a>
 
               <motion.a
-                href="https://wa.me/5891728266?text=Hola%2C%20me%20interesa%20conocer%20m%C3%A1s%20sobre%20sus%20servicios%20de%20marketing%20digital"
+                href="https://wa.me/584249172826?text=Hola%2C%20me%20interesa%20conocer%20m%C3%A1s%20sobre%20sus%20servicios%20de%20marketing%20digital"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center text-gray-300 hover:text-white transition-smooth font-inter group"
                 whileHover={{ x: 5 }}
               >
                 <MessageCircle className="h-4 w-4 mr-3" />
-                WhatsApp: +58 917 2826
+                WhatsApp: +58 424-9172826
                 <ArrowRight className="ml-2 h-4 w-4 opacity-0 group-hover:opacity-100 transition-smooth" />
               </motion.a>
 
