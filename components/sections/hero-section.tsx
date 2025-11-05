@@ -60,11 +60,11 @@ export function HeroSection() {
                 transition={{ duration: 0.8, delay: 0.3 }}
               >
                 <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-hedvig font-normal leading-tight text-white">
-                  Agencia especializada{" "}
+                  Dome Media: Agencia Boutique{" "}
                   <br />
-                  en tu{" "}
+                  de Marketing para{" "}
                   <span className="text-[#fffabf]">
-                    crecimiento
+                    Clínicas Estéticas
                   </span>
                 </h1>
               </motion.div>
@@ -76,9 +76,9 @@ export function HeroSection() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.5 }}
               >
-                Ayudamos a incrementar la facturación de clínicas estéticas y
-                cirujanos plásticos mediante la adquisición de clientes cualificados
-                con estrategias de tráfico altamente precisas
+                Agencia boutique especializada en marketing digital para clínicas estéticas y
+                cirujanos plásticos. Incrementamos tu facturación mediante estrategias de marketing médico estético
+                con tráfico cualificado y posicionamiento de marca de lujo
               </motion.p>
 
               {/* CTA Buttons */}
@@ -121,7 +121,7 @@ export function HeroSection() {
                 <div className="relative rounded-3xl overflow-hidden shadow-2xl">
                   <Image
                     src="/surgeon.png"
-                    alt="Cirugía estética profesional - Clínica de lujo"
+                    alt="Marketing para clínicas estéticas - Dome Media agencia boutique especializada en marketing digital para cirujanos plásticos"
                     width={600}
                     height={700}
                     className="w-full h-[500px] lg:h-[650px] object-cover object-top"

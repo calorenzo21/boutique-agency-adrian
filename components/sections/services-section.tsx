@@ -17,20 +17,20 @@ interface Service {
 const services: Service[] = [
   {
     id: 1,
-    title: "Tráfico",
-    description: "Dirigimos tráfico cualificado a través de múltiples canales garantizando oportunidades de ventas continuas y un crecimiento para tu negocio",
+    title: "Tráfico Cualificado",
+    description: "Estrategias de marketing digital para clínicas estéticas que dirigen tráfico cualificado a través de múltiples canales. Garantizamos oportunidades de ventas continuas y crecimiento sostenible para tu clínica de estética o cirugía plástica",
     image: "https://images.unsplash.com/photo-1591696205602-2f950c417cb9?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170"
   },
   {
     id: 2,
-    title: "Visibilidad",
-    description: "Posicionamos tus servicios o productos frente a audiencias altamente receptivas, aumentando la probabilidad de conversión y maximizando el retorno de inversión",
+    title: "Visibilidad y Posicionamiento",
+    description: "Posicionamos tu clínica estética frente a audiencias altamente receptivas mediante estrategias de marketing médico estético. Aumentamos la probabilidad de conversión y maximizamos el retorno de inversión para cirujanos plásticos",
     image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2015&q=80"
   },
   {
     id: 3,
-    title: "Estrategias",
-    description: "Creamos estrategias basadas en la comprensión psicológica del consumidor y algoritmos avanzados para captar su atención de manera efectiva",
+    title: "Estrategias de Marketing Boutique",
+    description: "Creamos estrategias de marketing boutique basadas en la comprensión psicológica del consumidor y algoritmos avanzados. Especialistas en marketing digital para clínicas estéticas que captan la atención de manera efectiva",
     image: "https://images.pexels.com/photos/669619/pexels-photo-669619.jpeg"
   }
 ];
@@ -87,10 +87,10 @@ export function ServicesSection() {
           </Badge>
 
           <h2 className="text-4xl md:text-5xl xl:text-6xl font-hedvig font-bold text-black mb-6 leading-tight">
-            Expertise confiable para
+            Servicios de Marketing Digital Boutique
             <br />
-            impulsar tu{" "}
-            <span className="text-burgundy">mayor éxito</span>
+            para{" "}
+            <span className="text-burgundy">Clínicas Estéticas</span>
           </h2>
         </motion.div>
 
@@ -156,7 +156,7 @@ export function ServicesSection() {
                         <div className="relative h-full">
                           <Image
                             src={service.image}
-                            alt={service.title}
+                            alt={`${service.title} - Dome Media agencia boutique especializada en marketing para clínicas estéticas`}
                             fill
                             className="object-cover"
                           />

@@ -15,8 +15,67 @@ const hedvigLettersSerif = {
 };
 
 export const metadata: Metadata = {
-  title: "Dome Media - Agencia especializada en tu crecimiento",
-  description: "Ayudamos a incrementar la facturación de clínicas estéticas y cirujanos plásticos mediante la adquisición de clientes cualificados con estrategias de tráfico altamente precisas.",
+  title: {
+    default: "Dome Media - Agencia Boutique de Marketing para Clínicas Estéticas",
+    template: "%s | Dome Media",
+  },
+  description: "Dome Media es una agencia boutique especializada en marketing digital para clínicas estéticas y cirujanos plásticos. Incrementamos tu facturación mediante estrategias de tráfico cualificado y posicionamiento de marca de lujo.",
+  keywords: [
+    "Dome Media",
+    "agencia boutique marketing",
+    "marketing para clínicas estéticas",
+    "marketing para cirujanos plásticos",
+    "agencia de marketing digital boutique",
+    "marketing médico estético",
+    "estrategias de marketing para clínicas",
+    "marketing digital clínicas estéticas",
+    "agencia boutique",
+    "marketing de lujo",
+  ],
+  authors: [{ name: "Dome Media" }],
+  creator: "Dome Media",
+  publisher: "Dome Media",
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://domemedia.com"),
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    type: "website",
+    locale: "es_ES",
+    url: "/",
+    siteName: "Dome Media",
+    title: "Dome Media - Agencia Boutique de Marketing para Clínicas Estéticas",
+    description: "Agencia boutique especializada en marketing digital para clínicas estéticas y cirujanos plásticos. Estrategias de tráfico cualificado y posicionamiento de marca de lujo.",
+    images: [
+      {
+        url: "/domemedia-cutted.png",
+        width: 1200,
+        height: 630,
+        alt: "Dome Media - Agencia Boutique de Marketing",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Dome Media - Agencia Boutique de Marketing para Clínicas Estéticas",
+    description: "Agencia boutique especializada en marketing digital para clínicas estéticas y cirujanos plásticos.",
+    images: ["/domemedia-cutted.png"],
+    creator: "@domemedia",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  verification: {
+    google: process.env.NEXT_PUBLIC_GOOGLE_VERIFICATION,
+  },
 };
 
 export default function RootLayout({
