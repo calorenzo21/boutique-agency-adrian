@@ -60,18 +60,18 @@ export function HeroSection() {
                 transition={{ duration: 0.8, delay: 0.3 }}
               >
                 <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-hedvig font-normal leading-tight text-white">
-                  Dome Media: Agencia Boutique{" "}
+                Agencia especializada{" "}
                   <br />
-                  de Marketing para{" "}
+                  en tu{" "}
                   <span className="text-[#fffabf]">
-                    Clínicas Estéticas
+                    crecimiento
                   </span>
                 </h1>
               </motion.div>
 
               {/* Subtitle */}
               <motion.p
-                className="text-base md:text-lg lg:text-xl text-gray-200 font-inter leading-relaxed max-w-xl"
+                className="text-base md:text-lg lg:text-xl text-gray-200 font-inter leading-relaxed max-w-2xl"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.5 }}

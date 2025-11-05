@@ -29,7 +29,7 @@ const services: Service[] = [
   },
   {
     id: 3,
-    title: "Estrategias de Marketing Boutique",
+    title: "Estrategias de Marketing",
     description: "Creamos estrategias de marketing boutique basadas en la comprensión psicológica del consumidor y algoritmos avanzados. Especialistas en marketing digital para clínicas estéticas que captan la atención de manera efectiva",
     image: "https://images.pexels.com/photos/669619/pexels-photo-669619.jpeg"
   }
@@ -87,7 +87,7 @@ export function ServicesSection() {
           </Badge>
 
           <h2 className="text-4xl md:text-5xl xl:text-6xl font-hedvig font-bold text-black mb-6 leading-tight">
-            Servicios de Marketing Digital Boutique
+            Servicios de Marketing Digital
             <br />
             para{" "}
             <span className="text-burgundy">Clínicas Estéticas</span>
@@ -158,7 +158,7 @@ export function ServicesSection() {
                             src={service.image}
                             alt={`${service.title} - Dome Media agencia boutique especializada en marketing para clínicas estéticas`}
                             fill
-                            className="object-cover"
+                            className="object-cover brightness-60"
                           />
 
                           {/* Overlay */}
