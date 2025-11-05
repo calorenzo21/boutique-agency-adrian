@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowRight, Instagram, Facebook, Linkedin, Mail, Phone } from "lucide-react";
+import { ArrowRight, Instagram, Facebook, Linkedin, Mail, MessageCircle } from "lucide-react";
 import Link from "next/link";
 
 export function Footer() {
@@ -94,22 +94,24 @@ export function Footer() {
             </h4>
             <div className="space-y-4">
               <motion.a
-                href="mailto:angel@domemedia.com"
+                href="mailto:riveradrian@dome-media.com"
                 className="flex items-center text-gray-300 hover:text-white transition-smooth font-inter group"
                 whileHover={{ x: 5 }}
               >
                 <Mail className="h-4 w-4 mr-3" />
-                angel@domemedia.com
+                riveradrian@dome-media.com
                 <ArrowRight className="ml-2 h-4 w-4 opacity-0 group-hover:opacity-100 transition-smooth" />
               </motion.a>
 
               <motion.a
-                href="tel:+34639113606"
+                href="https://wa.me/5891728266?text=Hola%2C%20me%20interesa%20conocer%20m%C3%A1s%20sobre%20sus%20servicios%20de%20marketing%20digital"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex items-center text-gray-300 hover:text-white transition-smooth font-inter group"
                 whileHover={{ x: 5 }}
               >
-                <Phone className="h-4 w-4 mr-3" />
-                +34 639 11 36 06
+                <MessageCircle className="h-4 w-4 mr-3" />
+                WhatsApp: +58 917 2826
                 <ArrowRight className="ml-2 h-4 w-4 opacity-0 group-hover:opacity-100 transition-smooth" />
               </motion.a>
 
